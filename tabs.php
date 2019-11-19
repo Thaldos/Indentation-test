@@ -14,7 +14,7 @@ class IndexController
 	const MY_ATTRIBUT = 'test';
 
 	/**
-	* The test attribute
+	* The super test attribute
 	*/
 	public $myAttribute;
 
@@ -26,7 +26,7 @@ class IndexController
 		$number = random_int(0, 100);
 
 		return new Response(
-			'<html><body>Lucky number: ' . $number . '</body></html>'
+			'<html><body><p>Lucky number: ' . $number . '</p></body></html>'
 		);
 	}
 
@@ -39,6 +39,9 @@ class IndexController
 		$isOk = false;
 
 		// Process
+		if (true) {
+			echo 'test';
+		}
 
 		return $isOk;
 	}
